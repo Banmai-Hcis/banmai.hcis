@@ -1,18 +1,23 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './App.css'
+
+import ScreenList from './components/ScreenList'
+import ScreenForm from './components/ScreenForm'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-    <div className=' p-5'>
-      <h3 className="text underline">
-        Hello Word!
-      </h3>
-    </div>
+      <BrowserRouter>
+        <Routes>
+          <Route>
+            <Route path="/" element={<ScreenList />} />
+            <Route path="/form" element={<ScreenForm />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }
