@@ -4,7 +4,7 @@ function ScreenList() {
   return (
     <>
       <div>ScreenList</div>
-      <a href="/form" className=' btn btn-primary'> Screen Form </a>
+      <a href="/form" className='btn btn-accent w-72'> Screen Form </a>
     </>
   )
 }

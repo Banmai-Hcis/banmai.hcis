@@ -10,6 +10,7 @@ function App() {
 
   return (
     <>
+      <div className='flex flex-col gap-2 p-5'>
       <BrowserRouter>
         <Routes>
           <Route>
@@ -18,6 +19,7 @@ function App() {
           </Route>
         </Routes>
       </BrowserRouter>
+      </div>
     </>
   )
 }
