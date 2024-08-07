@@ -4,7 +4,7 @@ function ScreenForm() {
   return (
     <>
       <div>ScreenForm</div>
-      <a href="/" className='btn btn-primary w-72'> Screen List </a>
+      <a href="/banmai.hcis/" className='btn btn-primary w-72'> Screen List </a>
     </>
   )
 }

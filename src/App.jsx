@@ -10,16 +10,15 @@ function App() {
 
   return (
     <>
-      <div className='flex flex-col gap-2 p-5'>
-      <BrowserRouter>
+    {/* < ScreenForm /> */}
+      {/* <div className='flex flex-col gap-2 p-5'> */}
+      {/* <BrowserRouter basename={"/banmai.hcis"}> */}
         <Routes>
-          <Route>
-            <Route path="/" element={<ScreenList />} />
-            <Route path="/form" element={<ScreenForm />} />
-          </Route>
+          <Route index element={<ScreenList />} />
+          <Route path="/form" element={<ScreenForm />} />
         </Routes>
-      </BrowserRouter>
-      </div>
+      {/* </BrowserRouter> */}
+      {/* </div> */}
     </>
   )
 }
